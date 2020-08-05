@@ -1,0 +1,31 @@
+.base-button {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--cyan-primary),
+    var(--blue-primary) 95%
+  );
+  height: 49px;
+  color: #fff;
+  border-radius: 40px;
+  font-family: "Raleway", sans-serif;
+}
+
+.base-button.in-header {
+  max-width: 236px;
+}
+
+.base-button.in-form {
+  max-width: 468px;
+}
+
+@media screen and (min-width: 1024px) {
+  .base-button.in-header {
+    height: 57px;
+    max-width: 280px;
+    font-size: 15px;
+  }
+  .base-button.in-form {
+    max-width: 202px;
+  }
+}

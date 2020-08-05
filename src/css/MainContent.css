@@ -1,0 +1,199 @@
+.main {
+  padding: 135px 28px 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.main .features-wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  place-items: center;
+  row-gap: 90px;
+  max-width: 880px;
+  margin-bottom: 154px;
+}
+
+.main .feature-card {
+  max-width: 385px;
+}
+
+.main .feature-card h1 {
+  font-size: 18px;
+  margin: 32px 0 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.main .feature-card p,
+.main .stay-productive p,
+.main .stay-productive a,
+.main form p {
+  font-size: 14px;
+}
+
+.main .stay-productive article {
+  max-width: 547px;
+}
+.main .stay-productive h1 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 50px;
+  font-size: 18px;
+}
+.main .stay-productive p,
+.main .stay-productive a {
+  margin-top: 20px;
+}
+
+.main .stay-productive a {
+  color: var(--green-primary);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--green-primary);
+}
+.main .stay-productive a::after {
+  content: url(../images/icon-arrow.svg);
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-left: 5px;
+}
+.main .stay-productive img {
+  max-width: 616px;
+}
+
+.main .testimonials-wrapper {
+  grid-template-columns: 280px;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 26px;
+  place-content: center;
+  margin: 150px 0 20px;
+  max-width: 280px;
+}
+.main .testimonials-wrapper .quotes {
+  width: 24px;
+  top: -18px;
+  z-index: 10;
+}
+
+.main .testimonial-card {
+  background-color: var(--dark-blue-testimonials);
+  border-radius: 4px;
+  padding: 28px 28px 18px 20px;
+  z-index: 20;
+  box-shadow: 1px 3px 5px 2px var(--dark-blue-primary);
+  
+}
+.main .testimonial-card .user-info {
+  height: 36px;
+  margin-top: 18px;
+}
+.main .testimonial-card h3 {
+  font-size: 8px;
+}
+.main .testimonial-card h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+}
+.main .testimonial-card .img {
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+  border: 1px solid white;
+}
+
+.main .testimonial-card p {
+  line-height: 1.6;
+  font-size: 10px;
+}
+.main form {
+  background-color: var(--dark-blue-primary);
+  padding: 42px 28px;
+  border-radius: 8px;
+  max-width: 864px;
+  box-shadow: 4px 6px 10px 2px rgba(0, 0, 0, 0.5);
+  top: 150px;
+}
+.main form h1 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+.main form input {
+  height: 49px;
+  outline: none;
+  max-width: 484px;
+  border-radius: 40px;
+  text-indent: 25px;
+  margin: 30px 0 20px;
+  color: var(--dark-blue-primary);
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    padding: 159px 52px 0;
+  }
+  .main .features-wrapper {
+    grid-template-columns: repeat(2, 385px);
+    justify-content: space-between;
+    grid-template-rows: repeat(2, auto);
+  }
+  .main .testimonial-card {
+    box-shadow: 6px 8px 5px 2px var(--dark-blue-primary);
+  }
+  .main .feature-card h1 {
+    margin: 18px 0 6px;
+  }
+  .main .stay-productive {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main .stay-productive article {
+    margin-left: 55px;
+  }
+  .main .stay-productive p:first-of-type {
+    max-width: 512px;
+  }
+  .main .stay-productive h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    max-width: 60%;
+  }
+  .main .testimonials-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 42px;
+    row-gap: 0;
+    place-content: center;
+    margin: 150px 0 100px;
+    max-width: 1164px;
+  }
+  .main .testimonial-card p {
+    font-size: 14px;
+  }
+  .main .testimonial-card {
+    border-radius: 4px;
+    padding: 40px 32px 22px 26px;
+  }
+  .main .testimonials-wrapper .quotes {
+    width: auto;
+    top: -35px;
+    left: -5px;
+  }
+
+  .main form {
+    padding: 54px 76px 18px;
+    justify-content: space-between;
+    top: 110px;
+  }
+  .main form p {
+    margin-bottom: 36px;
+    max-width: 620px;
+    margin: 0 auto 36px;
+  }
+  .main form h1 {
+    font-size: 28px;
+  }
+  .main form input {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width:1440px) {
+  .main {
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,105 @@
+.header {
+  padding: 25px 20px 30px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--dark-blue-primary);
+}
+
+.header section {
+  padding: 50px 19px 0;
+  z-index: 20;
+}
+.header section > img {
+  display: inline-block;
+  width: 100%;
+  max-width: 674px;
+}
+.header .bg-pattern-desktop {
+  display: none;
+  position: absolute;
+  top: -448px;
+}
+.nav-bar .app-logo {
+  background-image: url(../images/logo.svg);
+  height: 30px;
+  width: 82px;
+}
+.nav-bar ul {
+  height: 100%;
+  font-size: 14px;
+}
+
+.nav-bar li:not(:last-child) {
+  margin-right: 22px;
+}
+
+.header h2 {
+  font-size: 20px;
+  margin: 45px 0 15px;
+}
+
+.header p {
+  font-size: 14px;
+}
+
+.header .bg {
+  height: 180px;
+  background-color: var(--dark-blue-secondary);
+
+}
+.header .bg-pattern-mobile {
+  position: absolute;
+  z-index: 10;
+  top: -140px;
+  left: 0;
+}
+@media screen and (min-width:376px){
+  .header .bg {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 72px 80px;
+  }
+  .nav-bar .app-logo {
+    height: 52px;
+    width: 178px;
+    background-size: cover;
+  }
+  .nav-bar li:not(:last-child) {
+    margin-right: 57px;
+  }
+
+  .header section {
+    max-width: 674px;
+    padding-top: 94px;
+  }
+
+  .header p {
+    font-size: 16px;
+    max-width: 500px;
+  }
+  .header h2 {
+    font-size: 32px;
+    margin: 52px 0 15px;
+  }
+}
+
+@media screen and (min-width:1440px){
+  .header {
+    padding-bottom: 159px;
+  }
+  .header .bg{
+    display: flex; 
+    bottom: -30px;
+    height: 1px;
+    background-color: transparent;
+  }
+  .header .bg-pattern-desktop {
+    display: inline-block;
+  }
+  .header .bg-pattern-mobile {
+    display: none;
+  }
+}

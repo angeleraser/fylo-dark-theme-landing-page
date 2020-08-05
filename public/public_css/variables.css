@@ -1,0 +1,10 @@
+:root {
+  --dark-blue-primary: hsl(217, 28%, 15%);
+  --dark-blue-secondary: hsl(218, 28%, 13%);
+  --dark-blue-tertiary: hsl(216, 53%, 9%);
+  --dark-blue-testimonials: hsl(219, 30%, 18%);
+
+  --cyan-primary: hsl(176, 68%, 64%);
+  --green-primary: #26867a;
+  --blue-primary: hsl(198, 60%, 50%);
+}
